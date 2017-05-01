@@ -57,8 +57,15 @@ convertToNewRoman(4)
  => "IV"
 ```
 
+**Don't forget to write tests to ensure your function works properly.**
+
+## Extension
+An application you can run via your command line is wonderful, but let's add some functionality for a user to interact with the functions we've created. Someone may need to quickly know how an arabic number corresponds with a roman numeral! 
+
+We'll add a feature for a user to visit your page and enter a number (arabic number) and receive the corresponding roman numeral after pressing submit. To ensure this (somewhat tiny) application is user friendly, add some styling!
+
 ## Finished?
 
-When you think you've completed this challenge, take a few minutes and see if there are places to refactor. Then, when you're confident you have the best solution, create a Pull Request back to this repository with your fully tested solution.
+When you think you've completed this challenge, take a few minutes and see if there are places to refactor. Then, when you're confident you have the best solution, create a Pull Request back to this repository with your _fully_ tested solution.
 
 
