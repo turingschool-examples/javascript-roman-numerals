@@ -1,5 +1,6 @@
 const expect = require('expect');
-const convertToOldRoman = require('../lib/old_roman');
+const convertToOldRoman = require('../lib/old_roman').oldRoman;
+const convertToNewRoman = require('../lib/old_roman').newRoman;
 
 describe('convertToOldRoman', function() {
   it('converts num to roman numeral', function() {
@@ -14,5 +15,12 @@ describe('convertToOldRoman', function() {
 
     expect(convertToOldRoman(17)).toEqual('XVII');
     expect(convertToOldRoman(2475)).toEqual('MMCCCCLXXV');
+  })
+})
+
+describe('convertToNewRoman', function() {
+  it('converts num to roman numeral', function() {
+    expect(convertToNewRoman(4)).toEqual('IV');
+    expect(convertToNewRoman(944)).toEqual('CMXLIV');
   })
 })
