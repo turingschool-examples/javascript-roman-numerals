@@ -1,34 +1,22 @@
+const intervals = [1000, 500, 100, 50, 10, 5]
+
+const OldRoman = {
+  1000: 'M',
+  500: 'D',
+  100: 'C',
+  50: 'L',
+  10: 'X',
+  5: 'V'
+}
+
 const convertToOldRoman = (num) => {
   roman = ''
-  if (num / 1000 > 0) {
-    roman += "M".repeat(Math.floor(num / 1000))
-    num = num % 1000
-  }
-
-  if (num / 500 > 0) {
-    roman += "D".repeat(Math.floor(num / 500))
-    num = num % 500
-  }
-
-  if (num / 100 > 0) {
-    roman += "C".repeat(Math.floor(num / 100))
-    num = num % 100
-  }
-
-  if (num / 50 > 0) {
-    roman += "L".repeat(Math.floor(num / 50))
-    num = num % 50
-  }
-
-  if (num / 10 > 0) {
-    roman += "X".repeat(Math.floor(num / 10))
-    num = num % 10
-  }
-
-  if (num / 5 > 0) {
-    roman += "V".repeat(Math.floor(num / 5))
-    num = num % 5
-  }
+  intervals.forEach( (interval) => {
+    if (num / interval > 0) {
+      roman += OldRoman[interval].repeat(Math.floor(num / interval))
+      num = num % interval
+    }
+  })
 
   roman += "I".repeat(num)
 
