@@ -33,9 +33,8 @@ it("can convert old roman", function() {
 
 it("can convert old roman", function() {
     let converter = new RomanNumerals(45)
-    assert.equal(converter.convertToOldRoman(), 'XXXXV')
+    assert.equal(converter.convertToOldRoman(), 'XLV')
 })
-
 
 it("can convert old roman", function() {
     let converter = new RomanNumerals(51)
@@ -48,13 +47,38 @@ it("can convert old roman", function() {
 })
 
 it("can convert old roman", function() {
+    let converter = new RomanNumerals(94)
+    assert.equal(converter.convertToOldRoman(), 'XCIV')
+})
+
+it("can convert old roman", function() {
     let converter = new RomanNumerals(121)
     assert.equal(converter.convertToOldRoman(), 'CXXI')
+})
+
+
+it("can convert old roman", function() {
+    let converter = new RomanNumerals(144)
+    assert.equal(converter.convertToOldRoman(), 'CXLIV')
+})
+
+it("can convert old roman", function() {
+    let converter = new RomanNumerals(199)
+    assert.equal(converter.convertToOldRoman(), 'CXCIX')
+})
+it("can convert old roman", function() {
+    let converter = new RomanNumerals(445)
+    assert.equal(converter.convertToOldRoman(), 'CDXLV')
 })
 
 it("can convert old roman", function() {
     let converter = new RomanNumerals(777)
     assert.equal(converter.convertToOldRoman(), 'DCCLXXVII')
+})
+
+it("can convert old roman", function() {
+    let converter = new RomanNumerals(997)
+    assert.equal(converter.convertToOldRoman(), 'DMXCVII')
 })
 
 it("can convert old roman", function() {
