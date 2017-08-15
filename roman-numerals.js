@@ -21,10 +21,8 @@ function convertToOldRoman(num){
 
 function convertToNewRoman(num) {
   oldRoman = convertToOldRoman(num)
-  replaceNines(oldRoman)
-  if (oldRoman.includes("IIII")) {
-    return oldRoman.replace("IIII", "IV");
-  };
+  oldRoman = replaceNines(oldRoman);
+  oldRoman = replaceFours(oldRoman);
   if (oldRoman.includes("XXXX")) {
     return oldRoman.replace("XXXX", "XL");
   };
@@ -34,6 +32,13 @@ function convertToNewRoman(num) {
 function replaceNines(old) {
   if (old.includes("VIIII")) {
     return old.replace("VIIII", "IX");
+  };
+  return old;
+}
+
+function replaceFours(old) {
+  if (old.includes("IIII")) {
+    return old.replace("IIII", "IV");
   };
   return old;
 }
