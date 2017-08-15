@@ -21,11 +21,21 @@ function convertToOldRoman(num){
 
 function convertToNewRoman(num) {
   oldRoman = convertToOldRoman(num)
+  replaceNines(oldRoman)
   if (oldRoman.includes("IIII")) {
-    return "This is ripe for converting!";
-  } else {
-    return "No converting needed";
-  }
+    return oldRoman.replace("IIII", "IV");
+  };
+  if (oldRoman.includes("XXXX")) {
+    return oldRoman.replace("XXXX", "XL");
+  };
+  return oldRoman;
+}
+
+function replaceNines(old) {
+  if (old.includes("VIIII")) {
+    return old.replace("VIIII", "IX");
+  };
+  return old;
 }
 
 module.exports = {
