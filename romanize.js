@@ -9,7 +9,19 @@ let oldValues = {
 }
 
 function oldRoman(number) {
-  return 0
+  let romanNumerals = ''
+
+  while (number > 0) {
+    Object.keys(oldValues)
+          .sort((a,b) => { return b - a })
+          .forEach((key) => {
+      while (number % key !== number) {
+        romanNumerals += oldValues[key]
+        number -= key
+      }
+    })
+  }
+  return romanNumerals
 }
 
 var exports = module.exports = { oldRoman }
