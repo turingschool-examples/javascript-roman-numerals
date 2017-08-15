@@ -1,5 +1,5 @@
 assert = require('chai').assert;
-convertToOldRoman = require('../roman-numerals').convertToOldRoman;
+convertToOldRoman = require('../roman-numerals');
 
 describe("roman numerals converter functions", function(){
   it("converts a numeral into old roman numerals", function(){
