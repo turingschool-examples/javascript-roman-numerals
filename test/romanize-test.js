@@ -8,4 +8,11 @@ describe('Roman Numeral Converter', () => {
 
     assert.equal(result, 'CXXXXV')
   })
+
+  it('converts a number to new style roman numerals', () => {
+    number = 944
+    result = romanizer.newRoman(number)
+
+    assert.equal(result, 'CMXLIV')
+  })
 })
