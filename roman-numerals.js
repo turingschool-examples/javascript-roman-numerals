@@ -19,4 +19,16 @@ function convertToOldRoman(num){
   return result;
 }
 
-module.exports = convertToOldRoman;
+function convertToNewRoman(num) {
+  oldRoman = convertToOldRoman(num)
+  if (oldRoman.includes("IIII")) {
+    return "This is ripe for converting!";
+  } else {
+    return "No converting needed";
+  }
+}
+
+module.exports = {
+                  convertToOldRoman,
+                  convertToNewRoman
+                  };
