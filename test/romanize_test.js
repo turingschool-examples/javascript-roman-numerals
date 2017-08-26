@@ -50,4 +50,53 @@ describe('Roman Numeral Converter', function() {
 
     assert.equal(result, 'MMMMCCCCXXXXIIII')
   })
+
+  it('can do new conversion 1', function() {
+    number = 1
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'I')
+  })
+  
+  it('can do new conversion 4', function() {
+    number = 4
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'IV')
+  })
+
+  it('can do new conversion 5', function() {
+    number = 5
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'V')
+  })
+
+  it('can do new conversion 9', function() {
+    number = 9
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'IX')
+  })
+
+  it('can do new conversion 145', function() {
+    number = 145
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'CXLV')
+  })
+
+  it('can do new conversion 999', function() {
+    number = 999
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'CMXCIX')
+  })
+
+  it('can do new conversion 4444', function() {
+    number = 4444
+    result = romanize.newRoman(number)
+
+    assert.equal(result, 'MMMMCDXLIV')
+  })
 })
