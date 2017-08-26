@@ -23,6 +23,13 @@ describe('Roman Numeral Converter', function() {
     assert.equal(result, 'V')
   })
 
+  it('can do old conversion 9', function() {
+    number = 9
+    result = romanize.oldRoman(number)
+
+    assert.equal(result, 'VIIII')
+  })
+
   it('can do old conversion 145', function() {
     number = 145
     result = romanize.oldRoman(number)
@@ -30,4 +37,17 @@ describe('Roman Numeral Converter', function() {
     assert.equal(result, 'CXXXXV')
   })
 
+  it('can do old conversion 999', function() {
+    number = 999
+    result = romanize.oldRoman(number)
+
+    assert.equal(result, 'DCCCCLXXXXVIIII')
+  })
+
+  it('can do old conversion 4444', function() {
+    number = 4444
+    result = romanize.oldRoman(number)
+
+    assert.equal(result, 'MMMMCCCCXXXXIIII')
+  })
 })
