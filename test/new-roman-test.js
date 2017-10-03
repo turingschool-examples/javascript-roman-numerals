@@ -53,6 +53,11 @@ describe('convertToNewRoman functionality', function() {
       answer = convertToNewRoman(arabicNumerals);
 
       assert.equal(answer, null);
+
+      arabicNumerals = 3001;
+      answer = convertToNewRoman(arabicNumerals);
+
+      assert.equal(answer, null);
     })
   })
 })

@@ -63,6 +63,11 @@ describe('convertToOldRoman functionality', function() {
       answer = convertToOldRoman(arabicNumerals);
 
       assert.equal(answer, null);
+
+      arabicNumerals = 3001;
+      answer = convertToOldRoman(arabicNumerals);
+
+      assert.equal(answer, null);
     })
   })
 })
