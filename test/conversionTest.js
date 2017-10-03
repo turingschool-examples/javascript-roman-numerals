@@ -15,8 +15,8 @@ describe('testing roman numberal conversion', function() {
       assert.equal(convertToOldRoman(5), "V")
     })
 
-    it('returns X', function() {
-      assert.equal(convertToOldRoman(10), "X")
+    it('returns MMM', function () {
+      assert.equal(convertToOldRoman(3000), "MMM")
     })
   })
 })
