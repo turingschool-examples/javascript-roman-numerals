@@ -18,17 +18,22 @@ describe('Roman', function() {
       assert.equal('IX', toRoman(9));
     });
     it('should return roman numerals for double digits', function(){
+      assert.equal('XIV', toRoman(14));
       assert.equal('XXVII', toRoman(27));
+      assert.equal('XLIV', toRoman(44));
       assert.equal('XLVIII', toRoman(48));
       assert.equal('LIX', toRoman(59));
       assert.equal('XCIII', toRoman(93));
+      assert.equal('XCIX', toRoman(99));
     });
     it('should return roman numerals for triple digits', function(){
       assert.equal('CLXIII', toRoman(163));
+      assert.equal('CD', toRoman(400));
       assert.equal('CDII', toRoman(402));
       assert.equal('DLXXV', toRoman(575));
       assert.equal('DCCC', toRoman(800));
       assert.equal('CMXI', toRoman(911));
+      assert.equal('CMXI', toRoman(944));
     });
     it('should return roman numerals for quadruple digits', function(){
       assert.equal('MXXIV', toRoman(1024));
