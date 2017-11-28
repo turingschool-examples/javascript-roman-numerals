@@ -45,4 +45,4 @@ function convertToOldRoman(num) {
   return roman
 }
 
-console.log(convertToOldRoman(2687))
+module.exports = convertToOldRoman
