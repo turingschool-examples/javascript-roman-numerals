@@ -49,6 +49,9 @@ function toRoman(input){
   return num_str
 }
 
-for(i = 1; i < 100000; i ++){
-  console.log(toRoman(i))
+module.exports = {
+  digit: digit, letters: letters, toRoman: toRoman
 }
+// for(i = 1; i < 100000; i ++){
+//   console.log(toRoman(i))
+// }
