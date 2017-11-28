@@ -1,5 +1,3 @@
-# Used for base of project, a ruby repo: https://github.com/samuelssnider/roman_nums
-
 # JavaScript Roman Numerals
 
 ## Overview
