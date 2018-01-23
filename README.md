@@ -2,7 +2,11 @@
 
 ## Overview
 
+<<<<<<< HEAD
+In this challenge, we're going to write a function that converts an integer to its Roman numeral equivalent. If we give our method the Arabic number 476, our function will return the Roman Numeral CDLXXVI.
+=======
 In this challenge, we're going to write a function that converts an integer to its Roman numeral equivalent. IIf we give our method the Arabic number 476, our function will return the Roman Numeral CDLXXVI.
+>>>>>>> 256772be45102e573ba5679627cee2dd4f36f819
 
 ### Roman Numerals as Representation
 Has anyone ever seen a 5? Not a symbol we write on a piece of paper or print to a screen, but an actual, honest-to-goodness 5?  Of course not. You've seen things that somehow embody five: five apples, five fingers, five weekdays on the calendar, a scrap of paper with *5* written on it, and so forth.
@@ -52,7 +56,11 @@ We're going to write a second method so that will return modern Roman Numerals. 
 ```javascript
 convertToOldRoman(4)
  => "IIII"
+<<<<<<< HEAD
+
+=======
  
+>>>>>>> 256772be45102e573ba5679627cee2dd4f36f819
 convertToNewRoman(4)
  => "IV"
 ```
@@ -60,12 +68,19 @@ convertToNewRoman(4)
 **Don't forget to write tests to ensure your function works properly.**
 
 ## Extension
+<<<<<<< HEAD
+An application you can run via your command line is wonderful, but let's add some functionality for a user to interact with the functions we've created. Someone may need to quickly know how an arabic number corresponds with a roman numeral!
+=======
 An application you can run via your command line is wonderful, but let's add some functionality for a user to interact with the functions we've created. Someone may need to quickly know how an arabic number corresponds with a roman numeral! 
+>>>>>>> 256772be45102e573ba5679627cee2dd4f36f819
 
 We'll add a feature for a user to visit your page and enter a number (arabic number) and receive the corresponding roman numeral after pressing submit. To ensure this (somewhat tiny) application is user friendly, add some styling!
 
 ## Finished?
 
 When you think you've completed this challenge, take a few minutes and see if there are places to refactor. Then, when you're confident you have the best solution, create a Pull Request back to this repository with your _fully_ tested solution.
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 256772be45102e573ba5679627cee2dd4f36f819
