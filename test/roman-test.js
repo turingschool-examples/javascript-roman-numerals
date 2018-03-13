@@ -30,6 +30,9 @@ describe("Old Roman", () => {
     let r = new Roman
     assert.equal(r.convertToOldRoman(2000), "MM")
     assert.equal(r.convertToOldRoman(2523), "MMDXXIII")
+    assert.equal(r.convertToOldRoman(1473), "MCCCCLXXIII")
+    assert.equal(r.convertToOldRoman(5), "V")
+    assert.equal(r.convertToOldRoman(4), "IIII")
   })
 
 
