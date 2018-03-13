@@ -33,16 +33,16 @@ describe("Old Roman Numerals", () => {
   })
 
   context("it returns complex values", () => {
-    it("123 is IIIXXC", () => {
-      assert.equal(oldRomanNumeral(123), "IIIXXC")
+    it("123 is CXXIII", () => {
+      assert.equal(oldRomanNumeral(123), "CXXIII")
     })
 
-    it("555 is VLD", () => {
-      assert.equal(oldRomanNumeral(555), "VLD")
+    it("555 is DLV", () => {
+      assert.equal(oldRomanNumeral(555), "DLV")
     })
 
-    it("1234 is IIIIXXXCCM", () => {
-      assert.equal(oldRomanNumeral(1234), "IIIIXXXCCM")
+    it("1234 is MCCXXXIIII", () => {
+      assert.equal(oldRomanNumeral(1234), "MCCXXXIIII")
     })
   })
 })
