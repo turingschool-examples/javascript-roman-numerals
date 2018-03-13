@@ -1,4 +1,4 @@
-let num = 2014
+let num = 2914
 
 let dictionary = {
   1: "I",
@@ -42,9 +42,15 @@ console.log(convertToNewRoman(4)) // "IV"
 
 // ex: 2914 ---> MMCMXIV
 
-num % 1000 // capture 2, fill array with 2 1000s: MM
+num % 1000 // capture 2, fill array with 2 dictionary[1000] ---> MM
 num = num - (2 * 1000)
 
 num % 100 // catpure 9 but use if/else to see if it's 4 or 9
-  if 1, 2, 3, fill array with 1, 2, or 3 I's
-  if 4, fill array with 
+  if 1, 2, 3, fill array with 1, 2, or 3 Cs
+  if 4, fill array with dictionary[400]
+  if 5, fill array with dictionary[500]
+  if 6, 7, 8, fill array with dictionary[500] AND 1, 2, 3 Cs
+  if 9, fill array with dictionary[900]
+  THEN num = num - (digit * 100)
+
+  num % 10...
